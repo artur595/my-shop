@@ -2,7 +2,7 @@
   "name": "my-shop",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://artur595.github.io./github-pages-react-shop",
+  "homepage": "https://artur595.github.io/my-shop",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",

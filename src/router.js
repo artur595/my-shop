@@ -2,9 +2,9 @@ import {
   createBrowserRouter, createRoutesFromElements, Navigate, Route,
 } from 'react-router-dom';
 import React, { lazy, Suspense } from 'react';
+import CircularProgress from '@mui/material/CircularProgress';
 import App from './App';
 import Catalog from './pages/Catalog';
-import CircularProgress from "@mui/material/CircularProgress";
 
 const Cart = lazy(() => import('./pages/Cart'));
 
@@ -29,15 +29,14 @@ export default createBrowserRouter(
             >
               <CircularProgress size={60} />
             </div>
-          )}>
+          )}
+          >
             <Cart />
           </Suspense>
         )}
       />
 
-      {/* <Route path="404" element={<NotFound />} /> */}
-
-      {/* <Route path="*" element={<Navigate to="/404" replace />} /> */}
     </Route>,
   ),
+  { basename: '/my-shop' },
 );
